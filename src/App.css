@@ -5,7 +5,7 @@
 }
 
 .site-wrapper {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   place-content: center;
@@ -123,6 +123,18 @@ input {
   color: #fff !important;
 }
 
+/* for NETLIFY */
+.css-1x5jdmq {
+  color: #fff !important;
+}
+.css-igs3ac {
+  border-color: rgb(135, 238, 204) !important;
+}
+
+.css-7srjgk {
+  color: #fff !important;
+}
+
 label {
   color: #fff !important;
 }
@@ -164,11 +176,17 @@ input[type="number"] {
 }
 
 @media screen and (max-width: 520px) {
+  .site-wrapper {
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height: fill-available;
+  }
   .stock-container {
     width: 90vw;
   }
   .inner-wrapper {
     width: 95%;
+    height: 730px;
   }
   .title-for-result {
     font-size: 1.2rem;
@@ -192,6 +210,9 @@ input[type="number"] {
 
 @media screen and (max-width: 840px) {
   .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    width: 90% !important;
+  }
+  .css-7srjgk {
     width: 90% !important;
   }
   .card-title {
@@ -222,17 +243,22 @@ input[type="number"] {
     font-size: 1rem;
   }
   .result {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
     border-top: 1px solid rgb(135, 238, 204);
   }
 }
+
+/* For IPHONE SE */
 
 @media screen and (max-width: 375px) {
   .stock-container {
     place-items: center;
   }
   .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    width: 80% !important;
+  }
+  .css-7srjgk {
     width: 80% !important;
   }
   .holder {
@@ -253,6 +279,7 @@ input[type="number"] {
   .result {
     width: 100%;
   }
+  .inner-wrapper {
+    height: 660px;
+  }
 }
-
-/* For IPHONE SE */

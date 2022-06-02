@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { TextField } from "@mui/material";
+import TextField from "@mui/material/TextField";
 
 const BuyAndSell = () => {
   const [stocksQuantity, setStocksQuantity] = useState();
