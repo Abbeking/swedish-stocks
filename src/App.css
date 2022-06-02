@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.site-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  background-color: rgb(56, 75, 96);
+}
+
+.inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-around;
+  height: 900px;
+  width: 95%;
+  background-color: rgb(38, 55, 75);
+}
+
+.stock-container {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+  height: fit-content;
+  flex-direction: column;
+}
+
+.stock-card {
+  height: fit-content;
+}
+
+.card-title {
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+h1,
+h3 {
+  color: #fff;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  margin-top: 1rem;
+}
+
+.cost {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 360px;
+  text-overflow: ellipsis;
+  margin-top: 0.5rem;
+}
+
+.holder {
+  display: flex;
+  place-content: center;
+  justify-content: space-around;
+}
+
+.bottom-result {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+}
+
+.stock-spacing {
+  margin-top: 1rem;
+}
+
+.red {
+  color: rgb(245, 65, 65);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 360px;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.bluebuy {
+  color: rgb(63, 153, 249);
+}
+
+.redsell {
+  color: rgb(245, 65, 65);
+}
+
+.blue {
+  color: rgb(63, 153, 249);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 360px;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: rgb(135, 238, 204) !important;
+}
+
+.css-1m3tev7-MuiInputBase-root-MuiOutlinedInput-root {
+  color: #fff !important;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  color: #fff !important;
+}
+
+label {
+  color: #fff !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.title-for-result {
+  margin-top: 0.5rem;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  width: 150px;
+}
+
+.holdSold {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.costhold {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.line {
+  margin-top: 0.5rem;
+  border-bottom: 1px solid rgb(135, 238, 204);
+  width: 150px;
+}
+
+@media screen and (max-width: 520px) {
+  .stock-container {
+    width: 90vw;
+  }
+  .inner-wrapper {
+    width: 95%;
+  }
+  .title-for-result {
+    font-size: 1.2rem;
+  }
+  .cost {
+    font-size: 0.8rem;
+  }
+  .red {
+    font-size: 0.8rem;
+  }
+  .blue {
+    font-size: 0.8rem;
+  }
+  .holdSold {
+    flex-direction: column;
+  }
+  .card-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    width: 90% !important;
+  }
+  .card-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 440px) and (max-width: 1750px) {
+  .stock-container {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .stock-container {
+    width: 85vw;
+  }
+  .holdSold {
+    flex-direction: column;
+  }
+  .cost {
+    font-size: 1rem;
+  }
+  .red {
+    font-size: 1rem;
+  }
+  .blue {
+    font-size: 1rem;
+  }
+  .result {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 1px solid rgb(135, 238, 204);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .stock-container {
+    place-items: center;
+  }
+  .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    width: 80% !important;
+  }
+  .holder {
+    justify-content: space-between;
+    width: 90vw;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  .cost,
+  .blue,
+  .red {
+    font-size: 0.75rem;
+  }
+  .card-title {
+    font-size: 1.3rem !important;
+  }
+  .result {
+    width: 100%;
+  }
+}
+
+/* For IPHONE SE */
