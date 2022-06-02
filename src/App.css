@@ -69,7 +69,6 @@ input {
 
 .holder {
   display: flex;
-  place-content: center;
   justify-content: space-around;
 }
 
