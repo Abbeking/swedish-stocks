@@ -5,12 +5,22 @@
 }
 
 .site-wrapper {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   place-content: center;
   place-items: center;
   background-color: rgb(56, 75, 96);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(56, 75, 96);
+  height: 100vh;
+  width: 100vw;
+  animation: fadeOut 2s;
 }
 
 .inner-wrapper {
@@ -177,6 +187,7 @@ input[type="number"] {
 
 @media screen and (max-width: 520px) {
   .site-wrapper {
+    min-height: 100vh;
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height: fill-available;
@@ -206,6 +217,11 @@ input[type="number"] {
   .card-title {
     font-size: 1.5rem !important;
   }
+  .result {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    border-top: 1px solid rgb(135, 238, 204);
+  }
 }
 
 @media screen and (max-width: 840px) {
@@ -226,12 +242,9 @@ input[type="number"] {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1350px) {
   .stock-container {
     width: 85vw;
-  }
-  .holdSold {
-    flex-direction: column;
   }
   .cost {
     font-size: 1rem;
@@ -242,10 +255,8 @@ input[type="number"] {
   .blue {
     font-size: 1rem;
   }
-  .result {
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
-    border-top: 1px solid rgb(135, 238, 204);
+  .card-title {
+    font-size: 1.5rem;
   }
 }
 
