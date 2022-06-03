@@ -6,6 +6,7 @@
 
 .site-wrapper {
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   place-content: center;
@@ -16,11 +17,30 @@
 .loading {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   background-color: rgb(56, 75, 96);
   height: 100vh;
   min-width: 100vw;
   animation: fadeOut 2s;
+}
+
+.pre-load-text {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.pre-load-wrapper {
+  display: flex;
+  height: 10vh;
+  justify-content: space-around;
+  flex-direction: column;
+  place-items: center;
+  padding-bottom: 10rem; /* change for mobile to 0 */
+}
+
+.discord {
+  width: 80px;
 }
 
 .inner-wrapper {
@@ -49,6 +69,10 @@
 .card-title {
   font-size: 2.3rem;
   text-align: center;
+  color: #87eecc;
+}
+.green-title {
+  color: #87eecc;
 }
 
 h1,
@@ -102,14 +126,6 @@ input {
   text-overflow: ellipsis;
   text-align: center;
   margin-top: 0.5rem;
-}
-
-.bluebuy {
-  color: rgb(63, 153, 249);
-}
-
-.redsell {
-  color: rgb(245, 65, 65);
 }
 
 .blue {
@@ -224,12 +240,6 @@ input[type="number"] {
 }
 
 @media screen and (max-width: 840px) {
-  .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
-    width: 90% !important;
-  }
-  .css-7srjgk {
-    width: 90% !important;
-  }
   .card-title {
     font-size: 2rem;
   }

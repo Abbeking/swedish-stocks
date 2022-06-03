@@ -43,7 +43,7 @@ const StockCounter = () => {
     <div className="stock-container">
       <div className="holder">
         <div className="stock-card">
-          <h1 className="card-title">Köptillfälle 1</h1>
+          <h1 className="card-title">Köptillfälle [1]</h1>
 
           <div className="input-section">
             <TextField
@@ -63,7 +63,7 @@ const StockCounter = () => {
           </div>
         </div>
         <div className="stock-card">
-          <h1 className="card-title">Köptillfälle 2</h1>
+          <h1 className="card-title">Köptillfälle [2]</h1>
 
           <div className="input-section">
             <TextField
@@ -85,8 +85,7 @@ const StockCounter = () => {
       </div>
       <div className="bottom-result stock-spacing">
         <div className="costhold">
-          <h3>Ditt GAV</h3>
-          <span className="title-for-result"></span>
+          <h3 className="green-title">Ditt GAV</h3>
         </div>
         {resultPrice > 0 ? (
           <h3 className="cost blue">
@@ -95,6 +94,7 @@ const StockCounter = () => {
         ) : (
           <h3 className="cost">0 SEK per aktie</h3>
         )}
+        <span className="line"></span>
       </div>
     </div>
   );

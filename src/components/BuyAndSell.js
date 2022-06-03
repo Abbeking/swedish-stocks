@@ -90,8 +90,7 @@ const BuyAndSell = () => {
       <div className="holdSold">
         <div className="input-section">
           <div className="costhold">
-            <h3 className="bluebuy">Inköpspris</h3>
-            <span className="title-for-result"></span>
+            <h3 className="green-title">Inköpspris</h3>
           </div>
           <div className="costhold">
             {totalCost > 0 ? (
@@ -106,8 +105,7 @@ const BuyAndSell = () => {
         </div>
         <div className="input-section">
           <div className="costhold">
-            <h3 className="redsell">Försäljningspris</h3>
-            <span className="title-for-result"></span>
+            <h3 className="green-title">Försäljningspris</h3>
           </div>
           <div className="costhold">
             {sellTotalCost > 0 ? (
@@ -124,8 +122,7 @@ const BuyAndSell = () => {
       <span className="result"></span>
       <div className="bottom-result">
         <div className="costhold">
-          <h3>Resultat</h3>
-          <span className="title-for-result"></span>
+          <h3 className="green-title">Resultat</h3>
         </div>
         <div className="costhold">
           {diffPrice > 0 ? (
